@@ -1,0 +1,93 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background: linear-gradient(90deg, #ff4b5c, #ff6f61);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about, #projects, #contact {
+    text-align: center;
+}
+
+#about p, #projects p, #contact p {
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    border-left: 5px solid #ff4b5c;
+    padding-left: 1rem;
+    font-style: italic;
+    color: #555;
+    background: #fff3f3;
+    margin: 1rem 0;
+}
+
+.project {
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #ff4b5c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #ff4b5c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
