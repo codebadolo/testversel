@@ -1,68 +1,530 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Carythma</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Carythma</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Bienvenue sur le portfolio de Carythma</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>À propos de Carythma</h2>
-        <p>
-            Une belle innovation qui mérite qu'on en parle : "CARYTHMA"
-        </p>
-        <p>
-            Carythma est une solution de suivi et de prédiction des complications cardiaques liées à l'arythmie. Elle permet de prévenir le mal avant le malaise. L'application permet de prévenir les maladies cardiovasculaires.
-        </p>
-        <p>
-            Arsène Levi, membre de l'équipe de conception, nous en parle davantage :
-        </p>
-        <blockquote>
-            Nous avons développé avec mon équipe un projet innovant dans le domaine de l’intelligence artificielle et de l’internet des objets. Notre projet, nommé Carythma, est une solution de suivi et de prédiction des complications cardiaques liées à l’arythmie. Il est composé d’un dispositif médical portable (à la ceinture) et d’une application mobile 📱⌚. Il permet de prévenir le mal avant le malaise.
-        </blockquote>
-        <p>
-            Nous avons participé à la compétition Orange Summer Challenge 2023, qui réunit 14 pays sur le thème de l’intelligence artificielle et de l’internet des objets. Parmi les 4 projets finalistes du Burkina Faso, le nôtre a remporté le 🥇 premier prix ! Nous sommes très fiers de cette reconnaissance et nous remercions tous ceux qui nous ont soutenus de près ou de loin.
-        </p>
-        <p>
-            De plus, étant premier au niveau national, Carythma a représenté le Burkina à la finale internationale au Maroc en février dernier. Cependant, nous n'avons pas été primés. L'équipe est en train d'améliorer son projet et reste ouverte à toute opportunité d'accompagnement dans la poursuite de la mise en œuvre de leur projet.
-        </p>
-        <p>
-            <a href="https://lien.vers.le.site">Lien officiel vers le site</a>
-        </p>
-    </section>
-
-    <section id="projects">
-        <h2>Mes Projets</h2>
-        <div class="project">
-            <h3>Projet 1</h3>
-            <p>Description du projet 1.</p>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
         </div>
-        <div class="project">
-            <h3>Projet 2</h3>
-            <p>Description du projet 2.</p>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <!-- <img src="img/logo1.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <img src="img/04.png" alt="logo1">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                            
+                        <a href="#home" class="nav-item nav-link active">Accueil</a>
+                        <a href="#about" class="nav-item nav-link">A propos</a>
+                        <a href="#feature" class="nav-item nav-link">Fonctionnalités</a>
+                    
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Télécharger</a>
+                    
+
+                    
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">La santé de votre cœur est notre priorité !</h1>
+                            <p class="text-white pb-3 animated slideInDown">Carythma est une solution de suivi et de prédiction des complications cardiaques liées à l'arythmie. Elle permet : 
+                                <b>un suivi à domicile du patient, </b>
+                                <b>d'avoir des probabilités de complications cardiaques (prédiction), </b>
+                                <b>de déclencher une alerte au médecin en cas de données physiologiques anormales pour une prise en charge rapide,</b>
+                                <b>une mise en contact avec les médecins,</b> 
+                                <b>d'éviter les files d'attente aux urgences.</b> 
+                                
+                                </p>
+                    
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/carythma-1.jpg" alt="">
+                                <img class="img-fluid" src="img/carythma-10.jpg" alt="">
+                                <img class="img-fluid" src="img/carythmafigma-15.jpg" alt="">
+                                <img class="img-fluid" src="img/carythmafigma-20.jpg" alt="">
+                                <img class="img-fluid" src="img/carythmafigma-8.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Ajoutez plus de projets ici -->
-    </section>
+        <!-- Navbar & Hero End -->
 
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <p>Email: <a href="mailto:carythma@example.com">carythma@example.com</a></p>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 Carythma. Tous droits réservés.</p>
-    </footer>
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium"></h5>
+                        <h1 class="mb-4"> A propos</h1>
+                        <p class="mb-4">Notre dispositif collecte en temps réel des données sur l'état du patient, y compris les fréquences cardiaques, le rythme cardiaque et l'intervalle PR. Ces données sont analysées par une intelligence artificielle (IA) intégrée à l'application. L'IA génère des résultats visuels et fournit des indications sur les plages de valeurs normales. De plus, l'application permet d'exporter des bilans de santé, de prendre des rendez-vous médicaux et de communiquer instantanément avec les professionnels de la santé, favorisant ainsi une meilleure gestion de la santé du patient.</p>
+                        <p class="mb-4"></p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0">Changez vos réglages</h2>
+                                        <p class="text-primary-gradient mb-0"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="">Recevez des notifcations</h2>
+                                        <p class="text-secondary-gradient mb-0"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <img alt="tv" class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/fin.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium"></h5>
+                        <h1 class="mb-4"></h1>
+                        <p class="mb-4">Le dispositif commence par collecter les données physiologiques, telles que la fréquence cardiaque et l'intervalle PR, à l'aide de capteurs appropriés. Ces données sont traitées, stockées temporairement, puis transmises en toute sécurité vers un emplacement centralisé. Après cela, une intelligence artificielle analyse les données pour extraire des informations pertinentes et génère des résultats. Les données sont également stockées à long terme pour référence future. En résumé, le dispositif assure la collecte, le traitement, la transmission et le stockage sécurisé des données avant qu'elles ne soient analysées par l'IA pour la surveillance et la prise de décision en temps réel.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class=>Collecte de données</h2>
+                                        <p class="text-primary-gradient mb-0"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class=>Traitement de données</h2>
+                                        <p class="text-secondary-gradient mb-0"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/fin2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Nos</h5>
+                    <h1 class="mb-5">Fonctionnalités</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-eye text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Alertes</h5>
+                            <p class="m-0">En cas de complication ou d'anomalie de votre santé, votre médecin sera automatiquement alerté.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-layer-group text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Prise de rendez-vous</h5>
+                            <p class="m-0">Prenez rendez-vous chez votre médecin à tout moment.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-edit text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Discussion instantanée</h5>
+                            <p class="m-0">Discutez et partagez des documents avec votre médecin concernant votre santé cardiaque.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-shield-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Prédiction</h5>
+                            <p class="m-0">Soyez informé à l'avance de l'état de votre cœur grâce à notre intelligence artificielle qui traite et analyse vos données.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cloud text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Conseils santé</h5>
+                            <p class="m-0">Recevez des conseils sur la santé cardiaque et des astuces pour une meilleure santé.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-mobile-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Suivi</h5>
+                            <p class="m-0">Carythma surveille de près votre santé cardiaque à tout moment et en tout lieu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Screenshot Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Interfaces</h5>
+                        <h1 class="mb-4">L'application carythma offre la meilleure experience utilisateur et  voici pourquoi</h1>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Fiable</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Sécurisé</p>
+                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Facile à utiliser</p>
+                        
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="img/carythma-1.jpg" alt="">
+                            <img class="img-fluid" src="img/carythma-6.jpg" alt="">
+                            <img class="img-fluid" src="img/carythmafigma-15.jpg" alt="">
+                            <img class="img-fluid" src="img/carythmafigma-20.jpg" alt="">
+                            <img class="img-fluid" src="img/carythmafigma-8.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Screenshot End -->
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">CARYTHMA</h5>
+                    <h1 class="mb-5">3 étapes simples </h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-cog fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Installez l'application</h5>
+                            <p class="mb-0">Téléchargez l'application, puis installez-la en un clic !</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-address-card fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Inscrivez-vous</h5>
+                            <p class="mb-0">Suivez les étapes d'inscription en renseignant vos informations personnelles.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Carythma est désormais à vos côtés</h5>
+                            <p class="mb-0">Connectez le dispositif à l'application mobile et soyez alerté en cas d'anomalie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+
+
+        <!-- Download Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/fin.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">TÉLÉCHARGER</h5>
+                        <h1 class="mb-4">Téléchargez la dernière version de l'application ici.</h1>
+                        <p class="mb-4">En un clic, obtenez la meilleure application de suivi et d'alerte en cas d'anomalie de votre santé cardiaque.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Disponible bientôt sur</p>
+                                        <h5 class="text-white mb-0">App Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Disponible bientôt sur</p>
+                                        <h5 class="text-white mb-0">Play Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download End -->
+        
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Notre équipe</h5>
+                    <h1 class="mb-5">Membres Carythma</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/nema.jpg" style="width: 100px; height: 100px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">KABORE Nematou</h5>
+                                <p class="mb-1">Développeuse mobile</p>
+                               
+                            </div>
+                        </div>
+                        <p class="mb-0">Chargée du développement frontend de l'application mobile et de la gestion du projet.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/willy.jpg" style="width: 100px; height: 100px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">OUEDRAOGO Wilfried</h5>
+                                <p class="mb-1">UX/UI Designer</p>    
+                            </div>
+                        </div>
+                        <p class="mb-0">Chargé du design et du développement web.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/astrid.jpg" style="width: 100px; height: 100px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">YAMEOGO Astrid</h5>
+                                <p class="mb-1">Community manager.</p>   
+                            </div>
+                        </div>
+                        <p class="mb-0">Chargée de marketing, rédaction de projets et communication.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/arsene.jpg" style="width: 100px; height: 100px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">SOME Levi Arsene</h5>
+                                <p class="mb-1">IOT et systèmes embarqués</p>     
+                            </div>
+                        </div>
+                        <p class="mb-0">Chargé de la conception 3D, des systèmes embarqués et de l'IOT.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/geo.jpg" style="width: 100px; height: 100px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">BADOLO Geofroy</h5>
+                                <p class="mb-1">Développeur en IA</p>
+                                
+                            </div>
+                        </div>
+                        <p class="mb-0">Chargé du developpement d'intélligence artificielle, analyste de données et developpeur backend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <div class="video-container">
+            <video controls>
+                <source src="img/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- Contact Start -->
+<div class="container-xxl py-5" id="contact">
+    <div class="container py-5 px-lg-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="text-primary-gradient fw-medium">Contact</h5>
+            <h1 class="mb-5">Laissez-nous un message !</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="wow fadeInUp" data-wow-delay="0.3s">
+
+                    <form action="traitement_formulaire.php" method="post">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" name="nom" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Nom</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email"> Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" name="sujet" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Sujet</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea name="message" class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div class="adresse">
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Address</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Ouagadougou , ouaga 2000</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+226 72 08 03 86</p>
+                        <p><i class="fa fa-envelope me-3"></i>carythma@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> 
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/wilfried-ouedraogo-b97269159/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Newsletter</h4>
+                        <p>Inscrivez vous pour avoir les actualités sur la santé cardiaque</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Carythma</a>, copyright OSC 2023. 
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
